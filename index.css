@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
-#myForm{
+.flex-column-center{
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+}
+#myForm{
+    margin-top: 2rem;
+    gap: 0.5rem;
 }
 

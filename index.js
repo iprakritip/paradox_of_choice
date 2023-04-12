@@ -5,8 +5,8 @@ const labelElement2= opt2.previousElementSibling;
 const decision = document.createElement("h2");
 const container = document.getElementById("container");
 const form = document.getElementById("myForm");
-const number = Math.floor(Math.random() * 10);
-console.log(opt1.value);
+const number = Math.floor(Math.random() * 100);
+
 const submitBtn = document.getElementById("submitBtn");
 
 form.addEventListener("submit", submitForm);
@@ -19,11 +19,10 @@ function submitForm(e) {
     labelElement2.style.display= "none";
     submitBtn.style.display = "none"
     if (number % 2 == 0) {
-        decision.innerHTML = `You should go with option 1 i.e ${opt2.value}`
+        decision.innerHTML = `You should go with option 2 i.e ${opt2.value}`
     }
     else {
         decision.innerHTML = `You should go with option 1 i.e ${opt1.value}`
     }
     container.appendChild(decision);
-    console.log("gesdafZ")
 }
