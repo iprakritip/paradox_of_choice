@@ -8,8 +8,9 @@ const number = Math.floor(Math.random() * 10);
 const submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click",()=>{
 form .submit();
+console.log("submitted")
 })
-function submitForm(e) {
+function submitForm() {
     // opt1.style.display = "none";
     // opt2.style.display = "none";
     // if (number % 2 == 0) {
