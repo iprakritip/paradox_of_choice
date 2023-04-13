@@ -13,6 +13,8 @@ form.addEventListener("submit", submitForm);
 
 function submitForm(e) {
     e.preventDefault();
+    console.log(opt1.value);
+    console.log(opt2.value);
     opt1.style.display = "none";
     opt2.style.display = "none";
     labelElement1.style.display= "none";
